@@ -81,7 +81,7 @@ const jobListings = filteredJobs.map(listings => {
       }
 ```
 #### Remvoing Filters
-- To remove a filter from the filter state the user needs to press the x button next to the filters they want to remove. I do this I made a function called remove that makes a copy of the filters state to be able to use the splice() method to remove the unwanted filter. Then I created a for loop that goes through all the jobs and if the filters matched a with a vaule from the jobs data then 1 would be added to count. When all the jobs have been looked through count value would be checked to see if equaled the length of filters. If it did than that job post would be added to filtered Jobs State than pushed onto the screen. 
+- To remove a filter from the filter state the user needs to press the x button next to the filters they want to remove. To do this I made a function called remove that makes a copy of the filters state to be able to use the splice() method to remove the unwanted filter. Then I created a for loop that goes through all the jobs and if the filters matched a with a vaule from the jobs data then 1 would be added to count. When all the jobs have been looked through count value would be checked to see if equaled the length of filters. If it did than that job post would be added to filtered Jobs State than pushed onto the screen. 
 
 ```js
  let newFilters = filters
